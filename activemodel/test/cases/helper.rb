@@ -12,7 +12,7 @@ I18n.enforce_available_locales = false
 
 require 'active_support/testing/autorun'
 
-require 'minitest/mock'
+require 'mocha/setup' # FIXME: stop using mocha
 
 # Skips the current run on Rubinius using Minitest::Assertions#skip
 def rubinius_skip(message = '')
